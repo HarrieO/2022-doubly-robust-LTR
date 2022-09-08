@@ -45,7 +45,7 @@ To reproduce the ablation studies, use the *--clip_multiplier* and *--bias_inter
 
 A different file can be used to reproduce the deterministic full-ranking setting:
 ```
-python3 deterministic_run.py 100000 local_output/IPS_fullranking_biasknown_N100000.txt --estimator DR --cutoff 5 --dataset Webscope_C14_Set1 --pretrained_model pretrained/Webscope_C14_Set1/pretrained_model.h5
+python3 deterministic_run.py 100000 local_output/IPS_fullranking_biasknown_N100000.txt --estimator DR --dataset Webscope_C14_Set1 --pretrained_model pretrained/Webscope_C14_Set1/pretrained_model.h5
 ```
 This file also accepts the *--estimator* flag as described above.
 
