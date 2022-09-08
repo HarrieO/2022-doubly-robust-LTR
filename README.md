@@ -64,3 +64,8 @@ python3 ratioprop_run.py 100000 local_output/ratioprop_top5_biasknown_N100000.tx
 ```
 python3 ratioprop_deterministic_run.py 100000 local_output/ratioprop_fullranking_biasknown_N100000.txt --dataset Webscope_C14_Set1 --pretrained_model pretrained/Webscope_C14_Set1/pretrained_model.h5
 ```
+
+Lastly, the full-information results (based on true labels instead of simulated clicks) can be reproduced with the following command:
+```
+python3 supervised_run.py local_output/full-info.txt --dataset Webscope_C14_Set1
+```
