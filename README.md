@@ -40,7 +40,7 @@ The following command generates *N=100000* impressions in a top-5 setting on the
 python3 run.py 100000 local_output/IPS_top5_biasknown_N100000.txt --cutoff 5 --dataset Webscope_C14_Set1 --pretrained_model pretrained/Webscope_C14_Set1/pretrained_model.h5 --estimator DR
 ```
 For other estimators change the *--estimator* flag, it accepts the following values *Naive*, *IPS*, *DM* or *DR*.
-Add the *--estimate_bias* flag to enable bias parameters are estimated instead of known.
+Adding the *--estimate_bias* flag makes bias parameters estimated instead of known.
 To reproduce the ablation studies, use the *--clip_multiplier* and *--bias_interpolation* flags.
 
 A different file can be used to reproduce the deterministic full-ranking setting:
